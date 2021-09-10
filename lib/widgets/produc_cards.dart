@@ -19,6 +19,7 @@ class ProductCards extends StatelessWidget {
               constraints: BoxConstraints(minHeight: 380),
               child: Card(
                 child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     SizedBox(
                       width: 260,
@@ -29,7 +30,7 @@ class ProductCards extends StatelessWidget {
                           width: 260,
                           height: 200,
 // fit: BoxFit.contain,
-                          image: AssetImage('images/udx.png'),
+                          image: AssetImage('./images/hello.png'),
                         ),
                       ),
                     ),

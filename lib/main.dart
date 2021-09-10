@@ -27,6 +27,9 @@ class MyApp extends StatelessWidget {
 class Website extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    // AssetImage abstractAsset = AssetImage('./images/abstract.jpg');
+    // Image image = Image(image: abstractAsset);
+
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       title: 'Udos Computers',
@@ -40,64 +43,79 @@ class Website extends StatelessWidget {
               child: AppBar(
                 toolbarHeight: 70,
                 backgroundColor: Colors.black87.withOpacity(0.4),
-                leading: Image(
-                  image: AssetImage('images/udx.jpg'),
-                ),
+
+                // leading:
                 title: Row(
-                  mainAxisAlignment: MainAxisAlignment.end,
-                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'PC BUILDER',
-                        style: GoogleFonts.lato(
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white70,
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24),
+                      child: SizedBox(
+                        height: 80,
+                        width: 100,
+                        child: Image(
+                          fit: BoxFit.contain,
+                          image: AssetImage('./images/GqbZn29306.png'),
                         ),
                       ),
                     ),
-                    SizedBox(
-                      width: 24,
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'SHOP',
-                        style: GoogleFonts.lato(
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white70,
+                    Row(
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      crossAxisAlignment: CrossAxisAlignment.center,
+                      children: [
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'PC BUILDER',
+                            style: GoogleFonts.lato(
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white70,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 24,
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'ABOUT US',
-                        style: GoogleFonts.lato(
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white70,
+                        SizedBox(
+                          width: 24,
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 24,
-                    ),
-                    TextButton(
-                      onPressed: () {},
-                      child: Text(
-                        'CONTACT',
-                        style: GoogleFonts.lato(
-                          fontWeight: FontWeight.w800,
-                          color: Colors.white70,
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'SHOP',
+                            style: GoogleFonts.lato(
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white70,
+                            ),
+                          ),
                         ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 24,
+                        SizedBox(
+                          width: 24,
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'ABOUT US',
+                            style: GoogleFonts.lato(
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white70,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 24,
+                        ),
+                        TextButton(
+                          onPressed: () {},
+                          child: Text(
+                            'CONTACT',
+                            style: GoogleFonts.lato(
+                              fontWeight: FontWeight.w800,
+                              color: Colors.white70,
+                            ),
+                          ),
+                        ),
+                        SizedBox(
+                          width: 24,
+                        ),
+                      ],
                     ),
                   ],
                 ),
