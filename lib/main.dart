@@ -3,6 +3,8 @@ import 'dart:ui';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:hexcolor/hexcolor.dart';
+import 'package:udosxyz/widgets/banner.dart';
+import 'package:udosxyz/widgets/produc_cards.dart';
 
 void main() {
   runApp(
@@ -191,17 +193,45 @@ class Website extends StatelessWidget {
                 ),
               ),
               Container(
+                padding: EdgeInsets.fromLTRB(0, 64, 0, 32),
                 color: Colors.black87,
                 child: Column(
                   children: [
                     Row(
                       children: [
-                        Text('About Us'),
+                        Padding(
+                          padding: const EdgeInsets.fromLTRB(48, 0, 48, 0),
+                          child: Text(
+                            'Featured Builds',
+                            style: GoogleFonts.lato(
+                              fontSize: 32,
+                              fontWeight: FontWeight.w900,
+                              color: Colors.white,
+                            ),
+                          ),
+                        ),
                       ],
-                    )
+                    ),
+                    SingleChildScrollView(
+                      scrollDirection: Axis.horizontal,
+                      child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: [
+                          ProductCards(),
+                          ProductCards(),
+                          ProductCards(),
+                          ProductCards(),
+                          ProductCards(),
+                          ProductCards(),
+
+                          //ProductCards(),
+                        ],
+                      ),
+                    ),
                   ],
                 ),
               ),
+              ProductBanner(),
             ],
           ),
         ),

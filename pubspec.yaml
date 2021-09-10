@@ -16,6 +16,8 @@ flutter:
   assets:
     - images/udx.jpeg
     - images/GqbZn29306.png
+    - images/hello.png
+    - images/abstract.jpg
   uses-material-design: true
 name: udosxyz
 publish_to: none
